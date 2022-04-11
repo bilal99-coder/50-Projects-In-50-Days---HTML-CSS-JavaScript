@@ -23,9 +23,11 @@ function blurring() {
         clearInterval(int)
     }
 
-    //loadText.innerHTML = `${load}%`  
+    //loadText.innerHTML = `${load}%`    30  0 
     loadText.innerHTML = load+"%"
     loadText.style.opacity = 1 - (load/100)
+
+    backgroundSection.style.filter = `blur( ${30  -   ((load/100)*30) }px )`
     
 
 }
